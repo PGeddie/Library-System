@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+    }
+
+    table {
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">
+      <img src="images/books.jpg">
+    </div>
+    <div class="text">
+      <h1>Library Management System.</h1>
+    </div>
+    <div class="image">
+      <img src="images/books.jpg">
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="book.html">Book Catalog Management</a></li>
+        <li><a href="user.html">User Management</a></li>
+        <li><a href="circulation.html">Circulation Management</a></li>
+    </ul>
+</nav>
+
+  <!-- Book Catalog Section -->
+  <div id="bookList">
+    <section id="book-management-section">
+      
+  <div class="container">
+    <div class="bookImage">
+      <img src="images/bc.jpg">
+    </div>
+    <div class="bookText">
+      <h2>Book List</h2>
+    </div>
+    <div class="bookImage">
+      <img src="images/bc.jpg">
+    </div>
+  </div>
+    
+  <table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>author</th>
+            <th>isbn</th>
+            <th>genre</th>
+            <th>publication_year</th>
+            <th>available</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>A Good Girl’s Guide to Murder</td>
+            <td>Holly Jackson</td>
+            <td>54985626</td>
+            <td>Mystery</td>
+            <td>2019</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Dear Evan Hansen: The Novel</td>
+            <td>Val Emmich</td>
+            <td>6987466465</td>
+            <td>Fiction</td>
+            <td>2018</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>The Song of Achilles</td>
+            <td>Madeline Miller</td>
+            <td>87462622255</td>
+            <td>Historical Fiction</td>
+            <td>2011</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Percy Jackson</td>
+            <td>Rick Riordan</td>
+            <td>4578956232</td>
+            <td>Fiction</td>
+            <td>2005</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Percy Jackson</td>
+            <td>Rick Riordan</td>
+            <td>4578956232</td>
+            <td>Fiction</td>
+            <td>2005</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Angels and Demons</td>
+            <td>Dan Brown</td>
+            <td>4569877555</td>
+            <td>Thriller</td>
+            <td>2000</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>1984</td>
+            <td>George Orwell</td>
+            <td>9780451524935</td>
+            <td>Dystopian</td>
+            <td>1949</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>9780060935467</td>
+            <td>Fiction</td>
+            <td>1960</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Harry Potter</td>
+            <td>JK Rowling</td>
+            <td>9780141439518</td>
+            <td>Fantasy</td>
+            <td>1997</td>
+            <td>1</td>
+        </tr>
+    </tbody>
+</table>
+
+  </section>
+  </div>
+
+<br><br>
+
+  <!-- Search Section -->
+  <div id="searchResults">
+   <section id="search">
+    <div id="bookList">
+      <section id="book-management-section">
+        
+    <div class="container">
+      <div class="searchImage">
+        <img src="images/search.png">
+      </div>
+      <div class="searchText">
+        <h2>Search</h2>
+      </div>
+      <div class="searchImage">
+        <img src="images/search.png">
+      </div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search books or users...">
+  </section>
+</div>
+
+  <script src="js/script.js"></script>
+
+  <!-- Book Catalog -->
+  <script>
+    function addFunction() {
+      alert("Book Added Succesfully");
+    }
+    </script>
+<script>
+  function bookUpdateFunction() {
+    alert("Book Updated Succesfully");
+  }
+  </script>
+<script>
+  function bookDeleteFunction() {
+    alert("Book Deleted Succesfully");
+  }
+  </script>
+
+  <!-- User Management -->
+  <script>
+    function registerFunction() {
+      alert("User Registered Succesfully");
+    }
+    </script>
+<script>
+  function updateFunction() {
+    alert("User Updated Succesfully");
+  }
+  </script>
+<script>
+  function deleteFunction() {
+    alert("User Deleted Succesfully");
+  }
+  </script>
+
+  <!-- Circulation Management -->
+  <script>
+    function returnFunction() {
+      alert("Book Returned Succesfully");
+    }
+    </script>
+<script>
+  function renewFunction() {
+    alert("Book Renewed Succesfully");
+  }
+  </script>
+<script>
+  function issueFunction() {
+    alert("Book Issued Succesfully");
+  }
+  </script>
+
+</body>
+</html>

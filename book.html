@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">
+      <img src="images/books.jpg">
+    </div>
+    <div class="text">
+      <h1>Library Management System.</h1>
+    </div>
+    <div class="image">
+      <img src="images/books.jpg">
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="book.html">Book Catalog Management</a></li>
+        <li><a href="user.html">User Management</a></li>
+        <li><a href="circulation.html">Circulation Management</a></li>
+    </ul>
+</nav>
+
+  <!-- Book Catalog Section -->
+  <div id="bookList">
+    <section id="book-management-section">
+      
+  <div class="container">
+    <div class="bookImage">
+      <img src="images/bc.jpg">
+    </div>
+    <div class="bookText">
+      <h2>Book Catalog Management</h2>
+    </div>
+    <div class="bookImage">
+      <img src="images/bc.jpg">
+    </div>
+  </div>
+
+      <!-- Add Book Form -->
+      <form id="addBookForm">
+          <h3>Add New Book</h3>
+          <input type="text" id="addBookTitle" placeholder="Title" required>
+          <input type="text" id="addBookAuthor" placeholder="Author" required>
+          <input type="text" id="addBookISBN" placeholder="ISBN" required>
+          <input type="text" id="addBookGenre" placeholder="Genre" required>
+          <input type="number" id="addBookYear" placeholder="Publication Year" required>
+          <button onclick="addFunction()" type="submit">Add Book</button>
+      </form>
+
+      <!-- Update Book Form -->
+      <form id="updateBookForm">
+          <h3>Update Book Information</h3>
+          <input type="number" id="updateBookId" placeholder="Book ID" required>
+          <input type="text" id="updateBookTitle" placeholder="Updated Title">
+          <input type="text" id="updateBookAuthor" placeholder="Updated Author">
+          <input type="text" id="updateBookISBN" placeholder="Updated ISBN">
+          <input type="text" id="updateBookGenre" placeholder="Updated Genre">
+          <input type="number" id="updateBookYear" placeholder="Updated Publication Year">
+          <button onclick="bookUpdateFunction()" type="submit">Update Book</button>
+      </form>
+
+      <!-- Delete Book Form -->
+      <form id="deleteBookForm">
+          <h3>Delete Book</h3>
+          <input type="number" id="deleteBookId" placeholder="Book ID" required>
+          <button onclick="bookDeleteFunction()" type="submit">Delete Book</button>
+      </form>
+  </section>
+  </div>
+
+ <br><br>
+
+  <!-- Search Section -->
+  <div id="searchResults">
+   <section id="search">
+    <div id="bookList">
+      <section id="book-management-section">
+        
+    <div class="container">
+      <div class="searchImage">
+        <img src="images/search.png">
+      </div>
+      <div class="searchText">
+        <h2>Search</h2>
+      </div>
+      <div class="searchImage">
+        <img src="images/search.png">
+      </div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search books or users...">
+  </section>
+</div>
+
+  <script src="js/script.js"></script>
+
+  <!-- Book Catalog -->
+  <script>
+    function addFunction() {
+      alert("Book Added Succesfully");
+    }
+    </script>
+<script>
+  function bookUpdateFunction() {
+    alert("Book Updated Succesfully");
+  }
+  </script>
+<script>
+  function bookDeleteFunction() {
+    alert("Book Deleted Succesfully");
+  }
+  </script>
+
+  <!-- User Management -->
+  <script>
+    function registerFunction() {
+      alert("User Registered Succesfully");
+    }
+    </script>
+<script>
+  function updateFunction() {
+    alert("User Updated Succesfully");
+  }
+  </script>
+<script>
+  function deleteFunction() {
+    alert("User Deleted Succesfully");
+  }
+  </script>
+
+  <!-- Circulation Management -->
+  <script>
+    function returnFunction() {
+      alert("Book Returned Succesfully");
+    }
+    </script>
+<script>
+  function renewFunction() {
+    alert("Book Renewed Succesfully");
+  }
+  </script>
+<script>
+  function issueFunction() {
+    alert("Book Issued Succesfully");
+  }
+  </script>
+
+</body>
+</html>
